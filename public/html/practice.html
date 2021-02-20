@@ -1,0 +1,52 @@
+<!-- This is to template my table so i can translate it into my js file. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Order Numberr</th>
+          <th>Table Number</th>
+          <th>Items</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+
+          <td>
+            <ul>
+              <li>4 x FishMeal</li>
+              <li>6 x Lasagne</li>
+            </ul>
+          </td>
+
+          <td>Odered</td>
+          <td>
+            <a href="/setState?orderNumber=1&amp;state=ordered"
+              ><button>Mark as ordered</button></a
+            >
+            <a href="/setState?orderNumber=1&amp;state=cooked"
+              ><button>Mark as cooked</button></a
+            >
+            <a href="/setState?orderNumber=1&amp;state=served"
+              ><button>Mark as served</button></a
+            >
+            <a href="/setState?orderNumber=1&amp;state=paid"
+              ><button>Mark as paid</button></a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

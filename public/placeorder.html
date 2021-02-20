@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="background">
+  <div class="container font">
+    <div class="logo"><img src="./css/logo.png" alt="logo" width="20%" /></div>
+    <div class="outsideB">
+      <form method="POST" action="/placeorder">
+        <table>
+          <tr>
+            <td class="tableNo"><label for="tbl"> Table Number</label></td>
+            <td><input id="tbl" type="number" name="tableNumber" min="0" max="50" /><br /></td>
+          </tr>
+          <tr>
+            <td class="food"><label for="bgr">Burger &amp; chips</label></td>
+            <td class="select">
+              <input id="bgr" type="number" name="BurgerMeal" min="0" max="50" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="food"><label for="fsh">Fish &amp; chips</label></td>
+            <td class="select">
+              <input type="number" id="fsh" name="FishMeal" min="0" max="50" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="food"><label for="las">Lasagne</label></td>
+            <td class="select">
+              <input type="number" id="las" name="Lasagne" min="0" max="50" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="food"><label for="brs">Beers</label></td>
+            <td class="select">
+              <input type="number" id="brs" name="Beers" min="0" max="50" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td class="food"><label for="cks">Cokes</label></td>
+            <td class="select">
+              <input type="number" id="cks" name="Cokes" min="0" max="50" /><br />
+            </td>
+          </tr>
+        </table>
+
+        <button class="placeButton font" type="submit" class="button" value="Place order">
+          Place order
+        </button>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
